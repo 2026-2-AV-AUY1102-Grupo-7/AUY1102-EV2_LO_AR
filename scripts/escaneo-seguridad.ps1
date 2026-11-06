@@ -72,7 +72,7 @@ function Contar($lista, $disponible) {
   $c = Nuevo-Conteo
   $c.ok = $disponible
   foreach ($h in $lista) { if ($c.Contains($h.severidad)) { $c[$h.severidad]++ } }
-  $c.total = @($lista).Count
+  $c.total = @($lista | Where-Object { $_ }).Count
   return $c
 }
 
@@ -171,8 +171,9 @@ foreach ($grupo in @(
     @{ n = 'Snyk IaC';                        l = $hIac },
     @{ n = 'Snyk Container (imagen Docker)';  l = $hCont },
     @{ n = 'npm audit (paquetes afectados)';  l = $hNpm })) {
-  $det += "### $($grupo.n): $(@($grupo.l).Count)"
-  foreach ($h in (@($grupo.l) | Sort-Object { $orden[$_.severidad] })) {
+  $items = @($grupo.l | Where-Object { $_ })
+  $det += "### $($grupo.n): $($items.Count)"
+  foreach ($h in ($items | Sort-Object { $orden[$_.severidad] })) {
     $extra = ''
     if ($h.via) { $extra = "  (via $($h.via))" }
     $det += ('  [{0,-8}] {1,-34} {2} | {3}{4}' -f $h.severidad.ToUpper(), $h.id, $h.titulo, $h.paquete, $extra)
