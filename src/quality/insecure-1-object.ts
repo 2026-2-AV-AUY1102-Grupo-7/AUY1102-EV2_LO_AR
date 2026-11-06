@@ -7,19 +7,18 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/', (req, res) => {
-  const input = req.body.username;
-  const template = `
+  const username = req.body.username ?? '';
+  const template = pug.compile(`
 doctype
 html
 head
     title= 'Hello world'
 body
     form(action='/' method='post')
-        input#username.form-control(type='text' name='username' value='${input}')
+        input#username.form-control(type='text' name='username' value=username)
         button.btn.btn-primary(type='submit') Submit
-    p Hello ${input}`;
-  const fn = pug.compile(template);
-  const html = fn();
+    p Hello #{username}`);
+  const html = template({ username });
   res.send(html);
 });
 
