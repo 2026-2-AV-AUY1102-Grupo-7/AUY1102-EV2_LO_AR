@@ -337,7 +337,7 @@ _Figura 19. Dependabot detectó **60 alertas abiertas** y **45 cerradas** minuto
 
 #### Resultado: escaneo de secretos
 
-![Secret scanning](docs/evidencias/albert/13-ghas-secret-scanning.png)
+![Secret scanning](docs/evidencias/leonardo/Secret_scaning.png)
 _Figura 20. Secret scanning: **0 secretos abiertos**. GitHub indica que está ejecutando un **escaneo completo del historial**._
 
 - Al momento de la captura no hay secretos detectados. El escaneo del historial sigue en curso, y GitHub notifica por correo si encuentra alguno.
