@@ -1,0 +1,17 @@
+﻿================ RESUMEN REPO COMPLETO - ETAPA ANTES ================
+Fecha: 2026-11-06 01:07   Rama: fix/snyk-albert (814a615)
+Imagen base: node:14-alpine3.16
+
+Herramienta                      Critical  High  Medium  Low  Total
+npm audit                               2    49      20   11     82
+Snyk Open Source (deps)                 0     4       3    0      7
+Snyk Code (codigo)                  no aplica / no disponible (ver aviso)
+Snyk IaC                            no aplica / no disponible (ver aviso)
+Snyk Container (Dockerfile)             1    14      17    5     37
+
+Hallazgos asignados a Albert (remediacion):
+  1. node CVE-2025-55131 (Critical)                     PRESENTE
+  2. openssl CVE-2023-2650 (Medium)                     PRESENTE
+  3. openssl CVE-2023-5678 (Medium)                     PRESENTE
+  4. chokidar ^2.0.3 (6 vulns transitivas)              PRESENTE
+========================================================================

@@ -1,0 +1,7 @@
+﻿==================== RESUMEN PRUEBAS UNITARIAS ====================
+Fecha: 2026-11-06 01:40   Rama: fix/snyk-albert
+Suites : 10 total | 10 pasan | 0 fallan
+Pruebas: 18 total | 18 pasan | 0 fallan | 0 pendientes
+Cobertura: sentencias 43.28% | ramas 42.85% | funciones 56.66% | lineas 43.28%
+Archivos con codigo sin cubrir: 6
+===================================================================

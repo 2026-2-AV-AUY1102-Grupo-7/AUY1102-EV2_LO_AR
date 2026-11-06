@@ -1,0 +1,22 @@
+﻿
+Testing C:\Users\Albert Ruiz\Documents\Claude\AUY1102-EV2_LO_AR...
+
+Tested 27 dependencies for known issues, found 1 issue, 1 vulnerable path.
+
+
+Issues with no direct upgrade or patch:
+  Ô£ù Uncontrolled Recursion [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-YAML-15765520] in yaml@1.10.2
+    introduced by cosmiconfig@6.0.0 > yaml@1.10.2
+  This issue was fixed in versions: 1.10.3, 2.8.3
+
+
+
+Organization:      ayra-serv
+Package manager:   npm
+Target file:       package-lock.json
+Project name:      @Fundacion-Instituto-Profesional-Duoc-UC/auy1102-pipeline
+Open source:       no
+Project path:      C:\Users\Albert Ruiz\Documents\Claude\AUY1102-EV2_LO_AR
+Licenses:          enabled
+
+

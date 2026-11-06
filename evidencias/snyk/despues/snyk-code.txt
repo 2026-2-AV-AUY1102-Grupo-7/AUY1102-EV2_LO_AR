@@ -1,0 +1,12 @@
+﻿
+ ERROR   Snyk Code is not enabled (SNYK-CODE-0005)
+         This error occurs when Snyk Code is not enabled for the current Organization.  
+         Activate Snyk Code and try again..                                             
+                                                                                        
+           Snyk Code is not supported for your current organization: `ayra-serv`.       
+
+Status:  403 Forbidden 
+Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-code-0005 
+Tip:     Try snyk doctor: `snyk <command> -d 2>&1 | snyk doctor --stdin` 
+                                                                         
+ID:      urn:snyk:interaction:457851cf-29bb-442f-89d7-8587d8a6d450 

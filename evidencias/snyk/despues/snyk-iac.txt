@@ -1,0 +1,94 @@
+﻿
+Snyk Infrastructure as Code
+
+- Snyk testing Infrastructure as Code configuration issues.
+
+ ERROR   IAC failure (SNYK-CLI-0012)
+                                                                                        
+             Failed to parse JSON file                                                  
+             Path: C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@babel\helper-plugin-utils\tsconfig.json              
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@babel\node\tsconfig.json                             
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@babel\plugin-syntax-jsx\tsconfig.json                
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@babel\register\tsconfig.json                         
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@faker-js\faker\tsconfig.json                         
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\@pnpm\npm-conf\lib\tsconfig.make-out.json             
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\array-buffer-byte-length\tsconfig.json                
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\available-typed-arrays\tsconfig.json                  
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\data-view-buffer\tsconfig.json                        
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\data-view-byte-length\tsconfig.json                   
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\data-view-byte-offset\tsconfig.json                   
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\define-data-property\tsconfig.json                    
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\es-define-property\tsconfig.json                      
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\es-errors\tsconfig.json                               
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\es-object-atoms\tsconfig.json                         
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\es-set-tostringtag\tsconfig.json                      
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\eslint-module-utils\tsconfig.json                     
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\has-proto\tsconfig.json                               
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\has-tostringtag\tsconfig.json                         
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\hasown\tsconfig.json                                  
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\is-array-buffer\tsconfig.json                         
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\is-data-view\tsconfig.json                            
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\is-negative-zero\tsconfig.json                        
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\is-shared-array-buffer\tsconfig.json                  
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\is-typed-array\tsconfig.json                          
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\JSONStream\test\fixtures\couch_sample.json            
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\npm\node_modules\hasown\tsconfig.json                 
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\possible-typed-array-names\tsconfig.json              
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\safe-array-concat\tsconfig.json                       
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\set-function-length\tsconfig.json                     
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\set-function-name\tsconfig.json                       
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\side-channel\tsconfig.json                            
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\ts-node\node12\tsconfig.json                          
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\typed-array-buffer\tsconfig.json                      
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\typed-array-byte-length\tsconfig.json                 
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\typed-array-byte-offset\tsconfig.json                 
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\typed-array-length\tsconfig.json                      
+                   C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\which-typed-array\tsconfig.json                       
+                                                                                        
+             Failed to parse YAML file                                                  
+             Path: C:\Users\Albert Ruiz\Documents\Claude\AUY1102-                       
+           EV2_LO_AR\node_modules\semantic-release\node_modules\universal-user-         
+           agent\.github\workflows\test.yml                                             
+
+Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-cli-0012 
+Tip:     Try snyk doctor: `snyk <command> -d 2>&1 | snyk doctor --stdin` 
+                                                                         
+ID:      urn:snyk:interaction:68dfde3b-d7bb-4e65-a792-f807020857e2 

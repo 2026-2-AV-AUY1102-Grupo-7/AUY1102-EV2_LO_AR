@@ -1,0 +1,16 @@
+PASS pkg-value-object test/value-object/primitives/EnumValueObject/checkValueIsValid.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/isEmpty.test.ts
+PASS pkg-value-object test/value-object/primitives/NumberValueObject/isBiggerThan.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/toString.test.ts
+PASS pkg-value-object test/value-object/primitives/NumberValueObject/equalsTo.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/hasMoreCharacterThan.test.ts
+PASS pkg-value-object test/value-object/primitives/NumberValueObject/isSmallerThan.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/equalsTo.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/hasLessCharacterThan.test.ts
+PASS pkg-value-object test/value-object/primitives/StringValueObject/differentTo.test.ts
+
+Test Suites: 10 passed, 10 total
+Tests:       18 passed, 18 total
+Snapshots:   0 total
+Time:        5.124 s
+Test results written to: evidencias\pruebas\jest-resultados.json
