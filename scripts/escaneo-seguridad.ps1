@@ -56,7 +56,7 @@ function Hallazgos-Snyk($json) {
   $lista = @()
   if ($null -eq $json) { return $lista }
   $vulns = @($json | ForEach-Object { $_.vulnerabilities }) | Where-Object { $_ }
-  foreach ($v in ($vulns | Sort-Object id -Unique)) {
+  foreach ($v in @($vulns | Where-Object { $_ -and $_.id } | Sort-Object id -Unique)) {
     $lista += [pscustomobject]@{
       severidad = $v.severity
       id        = $v.id
