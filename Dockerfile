@@ -1,4 +1,4 @@
-FROM node:14-alpine3.16
+FROM node:24.22.2-alpine3.24
 
 COPY . .
 
