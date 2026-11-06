@@ -1,0 +1,39 @@
+﻿
+Testing C:\Users\Albert Ruiz\Documents\Claude\AUY1102-EV2_LO_AR...
+
+Tested 133 dependencies for known issues, found 7 issues, 32 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade chokidar@2.0.3 to chokidar@4.0.0 to fix
+  Ô£ù Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905] in glob-parent@3.1.0
+    introduced by chokidar@2.0.3 > glob-parent@3.1.0
+  Ô£ù Inefficient Regular Expression Complexity [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-MICROMATCH-6838728] in micromatch@3.1.10
+    introduced by chokidar@2.0.3 > anymatch@2.0.0 > micromatch@3.1.10 and 1 other path(s)
+  Ô£ù Uncontrolled Recursion [High Severity][https://security.snyk.io/vuln/SNYK-JS-BRACES-19963945] in braces@2.3.2
+    introduced by chokidar@2.0.3 > braces@2.3.2 and 2 other path(s)
+  Ô£ù Excessive Platform Resource Consumption within a Loop [High Severity][https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727] in braces@2.3.2
+    introduced by chokidar@2.0.3 > braces@2.3.2 and 2 other path(s)
+  Ô£ù Regular Expression Denial of Service (ReDoS) (new) [High Severity][https://security.snyk.io/vuln/SNYK-JS-DECODEURICOMPONENT-21802484] in decode-uri-component@0.2.2
+    introduced by chokidar@2.0.3 > braces@2.3.2 > snapdragon@0.8.2 > source-map-resolve@0.5.3 > decode-uri-component@0.2.2 and 10 other path(s)
+  Ô£ù Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-UNSETVALUE-2400660] in unset-value@1.0.0
+    introduced by chokidar@2.0.3 > braces@2.3.2 > snapdragon@0.8.2 > base@0.11.2 > cache-base@1.0.1 > unset-value@1.0.0 and 10 other path(s)
+
+
+Issues with no direct upgrade or patch:
+  Ô£ù Uncontrolled Recursion [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-YAML-15765520] in yaml@1.10.2
+    introduced by cosmiconfig@6.0.0 > yaml@1.10.2
+  This issue was fixed in versions: 1.10.3, 2.8.3
+
+
+
+Organization:      ayra-serv
+Package manager:   npm
+Target file:       package-lock.json
+Project name:      @Fundacion-Instituto-Profesional-Duoc-UC/auy1102-pipeline
+Open source:       no
+Project path:      C:\Users\Albert Ruiz\Documents\Claude\AUY1102-EV2_LO_AR
+Licenses:          enabled
+
+

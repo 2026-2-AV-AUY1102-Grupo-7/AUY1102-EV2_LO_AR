@@ -1,0 +1,343 @@
+﻿
+Testing node:14-alpine3.16...
+
+Ô£ù Medium severity vulnerability found in openssl/libcrypto1.1
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-OPENSSL-5661567
+  Introduced through: openssl/libcrypto1.1@1.1.1t-r2, openssl/libssl1.1@1.1.1t-r2, apk-tools/apk-tools@2.12.9-r3, busybox/ssl_client@1.35.0-r17
+  From: openssl/libcrypto1.1@1.1.1t-r2
+  From: openssl/libssl1.1@1.1.1t-r2 > openssl/libcrypto1.1@1.1.1t-r2
+  From: apk-tools/apk-tools@2.12.9-r3 > openssl/libcrypto1.1@1.1.1t-r2
+  and 4 more...
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.1.1u-r0
+
+Ô£ù Medium severity vulnerability found in openssl/libcrypto1.1
+  Description: Inefficient Regular Expression Complexity
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-OPENSSL-5788362
+  Introduced through: openssl/libcrypto1.1@1.1.1t-r2, openssl/libssl1.1@1.1.1t-r2, apk-tools/apk-tools@2.12.9-r3, busybox/ssl_client@1.35.0-r17
+  From: openssl/libcrypto1.1@1.1.1t-r2
+  From: openssl/libssl1.1@1.1.1t-r2 > openssl/libcrypto1.1@1.1.1t-r2
+  From: apk-tools/apk-tools@2.12.9-r3 > openssl/libcrypto1.1@1.1.1t-r2
+  and 4 more...
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.1.1u-r2
+
+Ô£ù Medium severity vulnerability found in openssl/libcrypto1.1
+  Description: Excessive Iteration
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-OPENSSL-5821140
+  Introduced through: openssl/libcrypto1.1@1.1.1t-r2, openssl/libssl1.1@1.1.1t-r2, apk-tools/apk-tools@2.12.9-r3, busybox/ssl_client@1.35.0-r17
+  From: openssl/libcrypto1.1@1.1.1t-r2
+  From: openssl/libssl1.1@1.1.1t-r2 > openssl/libcrypto1.1@1.1.1t-r2
+  From: apk-tools/apk-tools@2.12.9-r3 > openssl/libcrypto1.1@1.1.1t-r2
+  and 4 more...
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.1.1v-r0
+
+Ô£ù Medium severity vulnerability found in openssl/libcrypto1.1
+  Description: Improper Check for Unusual or Exceptional Conditions
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-OPENSSL-6069876
+  Introduced through: openssl/libcrypto1.1@1.1.1t-r2, openssl/libssl1.1@1.1.1t-r2, apk-tools/apk-tools@2.12.9-r3, busybox/ssl_client@1.35.0-r17
+  From: openssl/libcrypto1.1@1.1.1t-r2
+  From: openssl/libssl1.1@1.1.1t-r2 > openssl/libcrypto1.1@1.1.1t-r2
+  From: apk-tools/apk-tools@2.12.9-r3 > openssl/libcrypto1.1@1.1.1t-r2
+  and 4 more...
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.1.1w-r1
+
+Ô£ù Medium severity vulnerability found in busybox/busybox
+  Description: Out-of-bounds Write
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-BUSYBOX-6913410
+  Introduced through: busybox/busybox@1.35.0-r17, alpine-baselayout/alpine-baselayout-data@3.2.0-r23, busybox/ssl_client@1.35.0-r17
+  From: busybox/busybox@1.35.0-r17
+  From: alpine-baselayout/alpine-baselayout-data@3.2.0-r23 > alpine-baselayout/alpine-baselayout@3.2.0-r23 > busybox/busybox@1.35.0-r17
+  From: busybox/ssl_client@1.35.0-r17
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.35.0-r18
+
+Ô£ù High severity vulnerability found in musl/musl
+  Description: CVE-2025-26519
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-MUSL-8720632
+  Introduced through: musl/musl@1.2.3-r2, openssl/libcrypto1.1@1.1.1t-r2, openssl/libssl1.1@1.1.1t-r2, zlib/zlib@1.2.12-r3, apk-tools/apk-tools@2.12.9-r3, busybox/ssl_client@1.35.0-r17, gcc/libgcc@11.2.1_git20220219-r2, musl/musl-utils@1.2.3-r2, pax-utils/scanelf@1.3.4-r0, alpine-baselayout/alpine-baselayout-data@3.2.0-r23, libc-dev/libc-utils@0.7.2-r3
+  From: musl/musl@1.2.3-r2
+  From: openssl/libcrypto1.1@1.1.1t-r2 > musl/musl@1.2.3-r2
+  From: openssl/libssl1.1@1.1.1t-r2 > musl/musl@1.2.3-r2
+  and 11 more...
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 1.2.3-r4
+
+------------ Detected 31 vulnerabilities for node@14.21.3 ------------ 
+
+
+Ô£ù Low severity vulnerability found in node
+  Description: Missing Authorization
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15764932
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù Low severity vulnerability found in node
+  Description: Permissive Cross-domain Policy with Untrusted Domains
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6252338
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.19.1, 20.11.1, 21.6.2
+
+Ô£ù Low severity vulnerability found in node
+  Description: Authorization Bypass
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-7430907
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.15.1, 22.4.1
+
+Ô£ù Low severity vulnerability found in node
+  Description: Authorization Bypass
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-7430909
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.15.1, 22.4.1
+
+Ô£ù Low severity vulnerability found in node
+  Description: Improper Handling of Values
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-7430912
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.15.1, 22.4.1
+
+Ô£ù Medium severity vulnerability found in node
+  Description: HTTP Request Smuggling
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-10169731
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.19.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-10169733
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.19.2, 22.15.1
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Incorrect Authorization
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14982187
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0, 22.22.0, 24.13.0, 25.3.0
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Observable Timing Discrepancy
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15763413
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Missing Release of Memory after Effective Lifetime
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15764510
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Inefficient Algorithmic Complexity
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15764696
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Missing Authorization
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15764724
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Inconsistency Between Implementation and Documented Design
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-5741796
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 16.20.1, 18.16.1, 20.3.1
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Observable Timing Discrepancy
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6252330
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.19.1, 20.11.1, 21.6.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: HTTP Request Smuggling
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6564550
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.20.1, 20.12.1, 21.7.2
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Improper Control of Generation of Code ('Code Injection')
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-7430900
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.20.4, 20.15.1, 22.4.1
+
+Ô£ù Medium severity vulnerability found in node
+  Description: Access Restriction Bypass
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-7430905
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.20.4, 20.15.1, 22.4.1
+
+Ô£ù High severity vulnerability found in node
+  Description: Uncaught Exception
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-10169632
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.19.2, 22.15.1, 23.11.1, 24.0.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Directory Traversal
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-10847885
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.19.4, 22.17.1, 24.4.1
+
+Ô£ù High severity vulnerability found in node
+  Description: UNIX Symbolic Link (Symlink) Following
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14928586
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0, 22.22.0, 24.13.0, 25.3.0
+
+Ô£ù High severity vulnerability found in node
+  Description: Uncaught Exception
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14929624
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0, 22.22.0, 24.13.0, 25.3.0
+
+Ô£ù High severity vulnerability found in node
+  Description: Reliance on Undefined, Unspecified, or Implementation-Defined Behavior
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14975915
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0
+
+Ô£ù High severity vulnerability found in node
+  Description: Uncaught Exception
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14982196
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0, 22.22.0, 24.13.0, 25.3.0
+
+Ô£ù High severity vulnerability found in node
+  Description: Uncaught Exception
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15763402
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Uncaught Exception
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-15763406
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.2, 22.22.2, 24.14.1, 25.8.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6252328
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.19.1, 20.11.1, 21.6.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Code Injection
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6252332
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.19.1, 20.11.1, 21.6.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6564548
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.20.1, 20.12.1, 21.7.2
+
+Ô£ù High severity vulnerability found in node
+  Description: Improper Control of Generation of Code ('Code Injection')
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-6615824
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.20.2, 20.12.2, 21.7.3
+
+Ô£ù High severity vulnerability found in node
+  Description: Server-Side Request Forgery (SSRF)
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-8379641
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 18.19.1, 20.11.1, 21.6.2
+
+Ô£ù Critical severity vulnerability found in node
+  Description: Race Condition
+  Info: https://security.snyk.io/vuln/SNYK-UPSTREAM-NODE-14928492
+  Introduced through: node@14.21.3
+  From: node@14.21.3
+  Image layer: Introduced by your base image (node:14-alpine3.16)
+  Fixed in: 20.20.0, 22.22.0, 24.13.0, 25.3.0
+
+Organization:      ayra-serv
+Package manager:   apk
+Target file:       Dockerfile
+Project name:      docker-image|node
+Docker image:      node:14-alpine3.16
+Platform:          linux/amd64
+Target OS:         Alpine Linux v3.16
+Base image:        node:14-alpine3.16
+Licenses:          enabled
+
+Tested 16 dependencies for known issues, found 37 issues.
+
+According to our scan, you are currently using the most secure version of the selected base image
+Alpine 3.16.5 is no longer supported by the Alpine maintainers. Vulnerability detection may be affected by a lack of security updates.
+
+Pro tip: use `--exclude-base-image-vulns` to exclude from display Docker base image vulnerabilities.
+
+Snyk found some vulnerabilities in your image applications (Snyk searches for these vulnerabilities by default). See https://snyk.co/app-vulns for more information.
+
+To remove these messages in the future, please run `snyk config set disableSuggestions=true`
+
+Learn more: https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/base-image-detection
+
+

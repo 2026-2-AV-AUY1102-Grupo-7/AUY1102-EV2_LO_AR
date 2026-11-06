@@ -1,0 +1,39 @@
+﻿src/index.ts
+  lineas sin cubrir: 8-10
+  funciones sin probar:
+    L8: .then(response => response.json())
+    L9: .then(data => console.log(data))
+    L10: .catch(error => console.error('Error:', error));
+
+src/quality/errores-object.ts
+  lineas sin cubrir: 2-3, 6
+  funciones sin probar:
+    L11: getUserData() {}
+    L13: sendEmail() {}
+
+src/quality/insecure-1-object.ts
+  lineas sin cubrir: 1-3, 5, 7, 10
+  funciones sin probar:
+    
+
+src/quality/insecure-2-object.ts
+  lineas sin cubrir: 1-2, 6-7, 11-14, 18, 22, 24-28, 30, 32
+  funciones sin probar:
+    L11: app.post('/change-password', (req, res) => {
+
+src/value-object/primitives/date-value-object.ts
+  lineas sin cubrir: 3, 7-9, 13-15, 19, 23-25, 29-30, 34-35
+  funciones sin probar:
+    L3: export abstract class DateValueObject extends StringValue...
+    L6: constructor(value: string) {
+    L12: private checkDateIsValue(date: string): void {
+    L18: public format(date: string): string {
+    L22: public isBetweenTheDates(startDate: string, lastDate: str...
+    L28: public isBeforeThisDate(anotherDate: string): boolean {
+    L33: public isAfterThisDate(anotherDate: string): boolean {
+
+src/value-object/primitives/enum-value-object.ts
+  lineas sin cubrir: 11
+  funciones sin probar:
+    
+

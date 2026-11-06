@@ -1,0 +1,450 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JS-YAML-15765520",
+      "title": "Uncontrolled Recursion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:P",
+      "credit": [
+        "kq5y",
+        "Peak Twilight"
+      ],
+      "semver": {
+        "vulnerable": [
+          ">=1.0.0 <1.10.3",
+          ">=2.0.0 <2.8.3"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "1.10.3",
+        "2.8.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "yaml",
+      "references": [
+        {
+          "url": "https://github.com/eemeli/yaml/security/advisories/GHSA-48c2-rrv3-qjmp",
+          "title": "GitHub Advisory"
+        },
+        {
+          "url": "https://github.com/eemeli/yaml/commit/1e84ebbea7ec35011a4c61bbb820a529ee4f359b",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/eemeli/yaml/releases/tag/v1.10.3",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/eemeli/yaml/releases/tag/v2.8.3",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2026-03-29T08:55:25.872153Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 4.3,
+          "modificationTime": "2026-07-11T11:03:04.255181Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-10-25T14:07:43.770160Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:P",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 4.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-10-25T14:07:43.770160Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-29T08:55:25.872153Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-11T11:03:04.255181Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Uncontrolled Recursion in the `compose/resolve` phase due to using recursive function calls without a depth bound. An attacker can cause the application to throw a `RangeError` and potentially terminate the Node.js process by supplying a deeply nested YAML payload that exhausts the call stack.\n## PoC\n```js\r\nconst YAML = require('yaml');\r\n\r\n// ~10 KB payload: 5000 levels of nested flow sequences\r\nconst payload = '['.repeat(5000) + '1' + ']'.repeat(5000);\r\n\r\ntry {\r\n  YAML.parse(payload);\r\n} catch (e) {\r\n  console.log(e.constructor.name); // RangeError (NOT YAMLParseError)\r\n  console.log(e.message);          // Maximum call stack size exceeded\r\n}\r\n```\n## Remediation\nUpgrade `yaml` to version 1.10.3, 2.8.3 or higher.\n## References\n- [GitHub Advisory](https://github.com/eemeli/yaml/security/advisories/GHSA-48c2-rrv3-qjmp)\n- [GitHub Commit](https://github.com/eemeli/yaml/commit/1e84ebbea7ec35011a4c61bbb820a529ee4f359b)\n- [GitHub Release](https://github.com/eemeli/yaml/releases/tag/v1.10.3)\n- [GitHub Release](https://github.com/eemeli/yaml/releases/tag/v2.8.3)\n",
+      "epssDetails": {
+        "percentile": "0.41740",
+        "probability": "0.00488",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-33532"
+        ],
+        "CWE": [
+          "CWE-674"
+        ],
+        "GHSA": [
+          "GHSA-48c2-rrv3-qjmp"
+        ]
+      },
+      "packageName": "yaml",
+      "proprietary": false,
+      "creationTime": "2026-03-26T08:56:12.015596Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-03-25T20:08:24Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-03-26T08:56:12.236794Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-10-25T14:07:43.770160Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "@Fundacion-Instituto-Profesional-Duoc-UC/auy1102-pipeline@1.0.0",
+        "cosmiconfig@6.0.0",
+        "yaml@1.10.2"
+      ],
+      "upgradePath": [
+        false,
+        "cosmiconfig@6.0.0",
+        "yaml@1.10.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "yaml",
+      "version": "1.10.2"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 27,
+  "org": "ayra-serv",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "npm",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false,
+    "autoApproveIgnores": false,
+    "approvalWorkflowEnabled": false
+  },
+  "summary": "1 vulnerable dependency path",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-JS-YAML-15765520",
+        "title": "Uncontrolled Recursion",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:P",
+        "credit": [
+          "kq5y",
+          "Peak Twilight"
+        ],
+        "semver": {
+          "vulnerable": [
+            ">=1.0.0 <1.10.3",
+            ">=2.0.0 <2.8.3"
+          ]
+        },
+        "exploit": "Proof of Concept",
+        "fixedIn": [
+          "1.10.3",
+          "2.8.3"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "js",
+        "severity": "medium",
+        "cvssScore": 5.3,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "yaml",
+        "references": [
+          {
+            "url": "https://github.com/eemeli/yaml/security/advisories/GHSA-48c2-rrv3-qjmp",
+            "title": "GitHub Advisory"
+          },
+          {
+            "url": "https://github.com/eemeli/yaml/commit/1e84ebbea7ec35011a4c61bbb820a529ee4f359b",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/eemeli/yaml/releases/tag/v1.10.3",
+            "title": "GitHub Release"
+          },
+          {
+            "url": "https://github.com/eemeli/yaml/releases/tag/v2.8.3",
+            "title": "GitHub Release"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "cvssV3BaseScore": 6.5,
+            "modificationTime": "2026-03-29T08:55:25.872153Z"
+          },
+          {
+            "assigner": "SUSE",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+            "cvssV3BaseScore": 4.3,
+            "modificationTime": "2026-07-11T11:03:04.255181Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 5.3,
+            "cvssVersion": "4.0",
+            "modificationTime": "2026-10-25T14:07:43.770160Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:P",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 4.3,
+            "cvssVersion": "3.1",
+            "modificationTime": "2026-10-25T14:07:43.770160Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "baseScore": 6.5,
+            "cvssVersion": "3.1",
+            "modificationTime": "2026-03-29T08:55:25.872153Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+            "assigner": "SUSE",
+            "severity": "medium",
+            "baseScore": 4.3,
+            "cvssVersion": "3.1",
+            "modificationTime": "2026-07-11T11:03:04.255181Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Uncontrolled Recursion in the `compose/resolve` phase due to using recursive function calls without a depth bound. An attacker can cause the application to throw a `RangeError` and potentially terminate the Node.js process by supplying a deeply nested YAML payload that exhausts the call stack.\n## PoC\n```js\r\nconst YAML = require('yaml');\r\n\r\n// ~10 KB payload: 5000 levels of nested flow sequences\r\nconst payload = '['.repeat(5000) + '1' + ']'.repeat(5000);\r\n\r\ntry {\r\n  YAML.parse(payload);\r\n} catch (e) {\r\n  console.log(e.constructor.name); // RangeError (NOT YAMLParseError)\r\n  console.log(e.message);          // Maximum call stack size exceeded\r\n}\r\n```\n## Remediation\nUpgrade `yaml` to version 1.10.3, 2.8.3 or higher.\n## References\n- [GitHub Advisory](https://github.com/eemeli/yaml/security/advisories/GHSA-48c2-rrv3-qjmp)\n- [GitHub Commit](https://github.com/eemeli/yaml/commit/1e84ebbea7ec35011a4c61bbb820a529ee4f359b)\n- [GitHub Release](https://github.com/eemeli/yaml/releases/tag/v1.10.3)\n- [GitHub Release](https://github.com/eemeli/yaml/releases/tag/v2.8.3)\n",
+        "epssDetails": {
+          "percentile": "0.41740",
+          "probability": "0.00488",
+          "modelVersion": "v2026.06.15"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2026-33532"
+          ],
+          "CWE": [
+            "CWE-674"
+          ],
+          "GHSA": [
+            "GHSA-48c2-rrv3-qjmp"
+          ]
+        },
+        "packageName": "yaml",
+        "proprietary": false,
+        "creationTime": "2026-03-26T08:56:12.015596Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2026-03-25T20:08:24Z",
+        "exploitDetails": {
+          "sources": [
+            "Snyk"
+          ],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Proof of Concept",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Proof of Concept",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "npm",
+        "publicationTime": "2026-03-26T08:56:12.236794Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2026-10-25T14:07:43.770160Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "@Fundacion-Instituto-Profesional-Duoc-UC/auy1102-pipeline@1.0.0",
+          "cosmiconfig@6.0.0",
+          "yaml@1.10.2"
+        ],
+        "upgradePath": [
+          false,
+          "cosmiconfig@6.0.0",
+          "yaml@1.10.3"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": false,
+        "isRuntime": false,
+        "name": "yaml",
+        "version": "1.10.2",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {},
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 1,
+  "projectName": "@Fundacion-Instituto-Profesional-Duoc-UC/auy1102-pipeline",
+  "displayTargetFile": "package-lock.json",
+  "hasUnknownVersions": false,
+  "path": "C:\\Users\\Albert Ruiz\\Documents\\Claude\\AUY1102-EV2_LO_AR/auy1102-pipeline"
+}
